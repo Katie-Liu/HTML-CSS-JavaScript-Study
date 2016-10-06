@@ -4,21 +4,16 @@
 </head>
 <body onload="myOnLoadfunction()" onunload="myOnUnLoadfunction()">
 <script type="text/javascript">
-    function myOnLoadfunction() {
-        alert('load');
-        return true;
-    }
-
-    function myOnUnLoadfunction() {
-        alert('unload');
-        return true;
-    }
-
     function linkSomePage_onclick() {
         alert('You Clicked?');
         return true;
     }
 </script>
-<a href="02.html" name="linkSomePage" onclick='return linkSomePage_onclick()'>Click Me</a>
+<a href="02.html" name="linkSomePage">
+    Click Me
+</a>
+<script type="text/javascript">
+    window.document.links[0].onclick = linkSomePage_onclick;
+</script>
 </body>
 </html>
