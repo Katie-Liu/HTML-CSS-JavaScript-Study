@@ -1,2 +1,2 @@
 # JavaScript-Study
-JavaScript Study
+HTML-CSS-JavaScript-Study
