@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<!--
+    如果想为元素设置层模型中的相对定位，
+    需要设置position:relative（表示相对定位），
+    它通过left、right、top、bottom属性确定
+    元素在正常文档流中的偏移位置。相对定位完成的
+    过程是首先按static(float)方式生成一个元素
+    (并且元素像层一样浮动了起来)，然后相对于以前
+    的位置移动，移动的方向和幅度由left、right、
+    top、bottom属性确定，偏移前的位置保留不动。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>relative样式</title>
+        <style type="text/css">
+            #div1{
+                width:200px;
+                height:200px;
+                border:2px red solid;
+                position: relative;
+                left: 100px;
+                top: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="div1"></div>
+    </body>
+</html>
