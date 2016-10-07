@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!--
+流动（Flow）是默认的网页布局模式。
+也就是说网页在默认状态下的 HTML 网页元素
+都是根据流动模型来分布网页内容的。
+
+流动布局模型特征一：
+块状元素都会在所处的包含元素内
+自上而下按顺序垂直延伸分布，
+因为在默认状态下，块状元素的宽度都为100%。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>流动模式下的块状元素</title>
+        <style type="text/css">
+            #box1{
+                width:300px;
+                height:100px;
+            }
+            div,h1,p{
+                border:1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box2">box2</div><!--块状元素，由于没有设置宽度，宽度默认显示为100%-->
+        <h1>标题</h1><!--块状元素，由于没有设置宽度，宽度默认显示为100%-->
+        <p>文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段文本段。</p><!--块状元素，由于没有设置宽度，宽度默认显示为100%-->
+
+        <div id="box1">box1</div><!--块状元素，由于设置了width:300px，宽度显示为300px-->
+    </body>
+</html>
