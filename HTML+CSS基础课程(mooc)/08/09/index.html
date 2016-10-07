@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!--伪类选择符-->
+<!--
+    为什么叫做伪类选择符，它允许给html不存在
+    的标签（标签的某种状态）设置样式
+-->
+<!--
+关于伪选择符：
+
+    关于伪类选择符，到目前为止，可以兼容所有浏鉴器的
+    “伪类选择符”就是 a 标签上使用 :hover 了（其实
+    伪类选择符还有很多，尤其是 css3 中，但是因为不能
+    兼容所有浏览器，本教程只是讲了这一种最常用的）。其
+    实 :hover 可以放在任意的标签上，比如说 p:hover，
+    但是它们的兼容性也是很不好的，所以现在比较常用的还是
+     a:hover 的组合。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>伪类选择符</title>
+        <style type="text/css">
+            a:hover{
+                color:red;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>勇气</h1>
+        <p class="first">三年级时，我还是一个<a href="http://www.imooc.com">胆小如鼠</a>的小女孩，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
+        <p id="second">到了三年级下学期时，我们班上了一节公开课，老师提出了一个很<span>简单</span>的问题，班里很多同学都举手了，甚至成绩比我差很多的，也举手了，还说着："我来，我来。"我环顾了四周，就我没有举手。</p>
+        <img src="http://img.mukewang.com/52b4113500018cf102000200.jpg" >
+    </body>
+</html>

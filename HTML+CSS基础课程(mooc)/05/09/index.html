@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<!--form表单中的label标签-->
+<!--
+    label标签不会向用户呈现任何特殊效果，
+    它的作用是为鼠标用户改进了可用性。
+    如果你在 label 标签内点击文本，
+    就会触发此控件。就是说，当用户单击选中该label标签时，
+    浏览器就会自动将焦点转到和标签相关的表单控件上
+    （就自动选中和该label标签相关连的表单控件上）。
+-->
+<!--<label for="控件id名称">-->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>form中的lable标签</title>
+    </head>
+
+    <body>
+        <form>
+            <label for="male">男</label>
+            <input type="radio" name="gender" id="male" />
+            <br />
+            <label for="female">女</label>
+            <input type="radio" name="gender" id="female" />
+            <br />
+            <label for="email">输入你的邮箱地址</label>
+            <input type="email" id="email" placeholder="Enter email">
+
+        </form>
+
+        <form>
+            <label>你对什么运动感兴趣：</label> <br />
+            <label for="run">慢跑</label>
+            <input type="checkbox" id="run" />
+            <br />
+            <label for="deng">登山</label>
+            <input type="checkbox" id="deng" />
+            <br />
+            <label for="basketball">篮球</label>
+            <input type="checkbox" id="basketball" />
+            <br />
+        </form>
+    </body>
+</html>

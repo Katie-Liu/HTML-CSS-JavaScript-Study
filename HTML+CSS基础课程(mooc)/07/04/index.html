@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<!--三种方法的优先级-->
+<!--内联式 > 嵌入式 > 外部式-->
+<!--
+    嵌入式>外部式有一个前提：嵌入式css样式的位置
+    一定在外部式的后面。如右代码编辑器就是这样，
+    <link href="style.css" ...>代码在
+    <style type="text/css">...</style>代码的前面
+    （实际开发中也是这么写的）。
+-->
+<!--总结来说，就是--就近原则（离被设置元素越近优先级别越高）-->
+<!--
+    注意上面所总结的优先级是有一个前提：内联式、嵌入式、
+    外部式样式表中css样式是在的相同权值的情况下
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>嵌入式css样式</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            span{
+                color:red;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>慕课网，<span style="color:pink; font-size: 10px;">超酷的互联网</span>、IT技术免费学习平台，创新的网络一站式学习、实践体验；服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！</p>
+    </body>
+</html>
