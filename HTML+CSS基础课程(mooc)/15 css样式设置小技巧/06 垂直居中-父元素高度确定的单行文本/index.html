@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!--
+    父元素高度确定的单行文本的竖直居中的方法：
+    通过设置父元素的 height 和 line-height 高度
+    一致来实现的。(height: 该元素的高度，line-height:
+     顾名思义，行高（行间距），指在文本中，行与行之间的
+     基线间的距离 )。
+
+    line-height 与 font-size 的计算值之差，
+    在 CSS 中成为“行间距”。分为两半，分别加到
+    一个文本行内容的顶部和底部。
+
+    这种文字行高与块高一致带来了一个弊端：
+    当文字内容的长度大于块的宽时，就有内容脱离了块。
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>垂直居中</title>
+        <style>
+
+            .wrap h2{
+                margin:0;
+                height:100px;
+
+                background:#ccc;
+            }
+            .wrap {
+                height: 100px;
+                line-height: 100px;
+                background:red;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!--下面是代码任务部分-->
+        <div class="wrap">
+            <h2>hi,imooc!</h2>
+        </div>
+    </body>
+</html>

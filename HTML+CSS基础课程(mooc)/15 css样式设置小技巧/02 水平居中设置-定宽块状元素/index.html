@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<!--
+    当被设置元素为 块状元素 时用 text-align：center
+     就不起作用了，这时也分两种情况：定宽块状元素和不定
+     宽块状元素。
+    定宽块状元素：块状元素的宽度width为固定值。
+    满足定宽和块状两个条件的元素是可以通过设置
+    “左右margin”值为“auto”来实现居中的。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>定宽块状元素水平居中</title>
+        <style>
+            div{
+                border:1px solid red;
+                /*两个条件缺一不可*/
+                width:200px;/*条件一：定宽*/
+                margin:20px auto;/*条件二：margin-left 与 margin-right 设置为 auto*/
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>我是定宽块状元素，我要水平居中显示。</div>
+    </body>
+</html>

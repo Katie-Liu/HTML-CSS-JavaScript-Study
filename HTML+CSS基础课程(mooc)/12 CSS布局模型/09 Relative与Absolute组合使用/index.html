@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<!--
+    使用position:absolute可以实现被设置元素
+    相对于浏览器（body）设置定位以后，大家有没有
+    想过可不可以相对于其它元素进行定位呢？答案是
+    肯定的，当然可以。使用position:relative来
+    帮忙，但是必须遵守下面规范：
+
+    1、参照定位的元素必须是相对定位元素的前辈元素;
+    2、参照定位的元素必须加入position:relative;
+    3、定位元素加入position:absolute，便可以使
+    用top、bottom、left、right来进行偏移定位了。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>相对参照元素进行定位</title>
+        <style type="text/css">
+            div{border:2px red solid;}
+            #box1{
+                width:200px;
+                height:200px;
+                position:relative;
+
+            }
+            #box2{
+                position:absolute;
+                top:20px;
+                left:30px;
+
+            }
+            /*下面是任务部分*/
+            #box3{
+                width:200px;
+                height:200px;
+                position: relative;
+            }
+            #box4{
+                width:99%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="box1">
+            <div id="box2">相对参照元素进行定位</div>
+        </div>
+
+        <h1>下面是任务部分</h1>
+        <div id="box3">
+            <img src="http://img.mukewang.com/541a7d8a00018cf102000200.jpg">
+            <div id="box4">当我还是三年级的学生时是一个害羞的小女生。</div>
+        </div>
+    </body>
+</html>
