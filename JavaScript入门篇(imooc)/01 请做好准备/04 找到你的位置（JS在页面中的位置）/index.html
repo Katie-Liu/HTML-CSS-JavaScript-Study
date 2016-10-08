@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<!--
+    可以将JavaScript代码放在html文件中任何位置，
+    但是我们一般放在网页的head或者body部分。
+
+    放在<head>部分
+    最常用的方式是在页面中head部分放置<script>元素，
+    浏览器解析head部分就会执行这个代码，然后才解析页
+    面的其余部分。
+
+    放在<body>部分
+    JavaScript代码在网页读取到该语句的时候就会执行。
+
+    注意: javascript作为一种脚本语言可以放在html页面
+    中任何位置，但是浏览器解释html时是按先后顺序的，所以
+    前面的script就先被执行。比如进行页面显示初始化的js必
+    须放在head里面，因为初始化都要求提前进行（如给页面body
+    设置css等）；而如果是通过事件调用执行的function那么
+    对位置没什么要求的。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>JS代码的位置</title>
+        <script type="text/javascript">
+            document.write('I love');
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write('javascript');
+        </script>
+    </body>
+</html>

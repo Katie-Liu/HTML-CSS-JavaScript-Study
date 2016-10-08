@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<!--
+    confirm 消息对话框通常用于允许用户做选择的动作
+
+    弹出对话框(包括一个确定按钮和一个取消按钮)。
+
+    语法:
+
+    confirm(str);
+    参数说明:
+
+    str：在消息对话框中要显示的文本
+    返回值: Boolean值
+
+    当用户点击"确定"按钮时，返回true
+    当用户点击"取消"按钮时，返回false
+
+    注: 通过返回值可以判断用户点击了什么按钮
+
+    注: 消息对话框是排它的，即用户在点击对话框按钮前，
+        不能进行任何其它操作。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>confirm</title>
+        <script type="text/javascript">
+            function rec(){
+                var mymessage= confirm('你时女士吗?');
+                if(mymessage==true)
+                {
+                    document.write("你是女士!");
+                }
+                else
+                {
+                    document.write("你是男士!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input name="button" type="button" onClick="rec()" value="点击我，弹出确认对话框" />
+    </body>
+</html>
