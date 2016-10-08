@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+    join()方法用于把数组中的所有元素放入一个字符串。
+    元素是通过指定的分隔符进行分隔的。
+
+    语法：
+
+    arrayObject.join(分隔符)
+
+    注意：返回一个字符串，该字符串把数组中的各个元素串
+    起来，用<分隔符>置于元素与元素之间。这个方法不影响
+    数组原本的内容。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Array对象 </title>
+        <script type="text/javascript">
+            var myarr1= new Array("86","010")
+            var myarr2= new Array("84697581");
+            var myarr3= myarr1.concat(myarr2);
+            document.write(myarr3.join('-'));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

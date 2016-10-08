@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+    sort()方法使数组中的元素按照一定的顺序排列。
+
+    语法:
+
+    arrayObject.sort(方法函数)
+
+    1.如果不指定<方法函数>，则按unicode码顺序排列。
+
+    2.如果指定<方法函数>，则按<方法函数>所指定的排序方法排序。
+
+    myArray.sort(sortMethod);
+
+    注意: 该函数要比较两个值，然后返回一个用于说明这两个值的
+    相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：
+
+        若返回值<=-1，则表示 A 在排序后的序列中出现在 B 之前。
+        若返回值>-1 && <1，则表示 A 和 B 具有相同的排序顺序。
+        若返回值>=1，则表示 A 在排序后的序列中出现在 B 之后。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Array对象 </title>
+        <script type="text/javascript">
+            function sortNum(a,b) {
+                return b - a;
+            }
+            var myarr = new Array("80","16","50","6","100","1");
+            document.write(myarr.sort(sortNum));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

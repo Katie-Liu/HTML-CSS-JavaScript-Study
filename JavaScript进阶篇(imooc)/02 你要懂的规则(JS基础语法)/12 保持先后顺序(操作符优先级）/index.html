@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+    操作符之间的优先级（高到低）:
+
+    算术操作符 → 比较操作符 → 逻辑操作符 → "="赋值符号
+
+    如果同级的运算是按从左到右次序进行,多层括号由里向外。
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>操作符优先级</title>
+        <script type="text/javascript">
+            var numa,numb,jq1;
+            numa=5;
+            numb=2;
+            jq1=numa + 30 >10 && numb * 3<20;
+            jq2=((numa + 30) / (7-numb)) * 3
+            document.write("jq1的值是:"+jq1+"<br>");
+            document.write("jq2的值是:"+jq2);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

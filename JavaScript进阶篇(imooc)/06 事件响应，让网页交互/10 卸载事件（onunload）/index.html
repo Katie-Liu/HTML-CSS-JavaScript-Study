@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<!--
+    当用户退出页面时（页面关闭、页面刷新等），
+    触发onUnload事件，同时执行被调用的程序。
+
+    注意：不同浏览器对onunload事件支持不同。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> 卸载事件 </title>
+        <script type="text/javascript">
+            window.onunload = onunload_message;
+            function onunload_message(){
+                alert("您确定离开该网页吗？");
+            }
+        </script>
+    </head>
+    <body>
+        欢迎学习JavaScript。
+    </body>
+</html>

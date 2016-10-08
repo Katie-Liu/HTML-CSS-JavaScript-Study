@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<!--
+    onclick是鼠标单击事件，当在网页上单击鼠标时，
+    就会发生该事件。同时onclick事件调用的程序块
+    就会被执行，通常与按钮一起使用。
+
+    注意: 在网页中，如使用事件，就在该元素中设置事件属性。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>单击事件 </title>
+        <script type="text/javascript">
+            function openwin(){
+                window.open('http://www.imooc.com','_blank','height=600,width=400,top=100,toolbar=no,left=0,menubar=no,scrollbars=no,status=no');}
+        </script>
+    </head>
+    <body>
+        <form>
+            <input name="点击我" type="button" value="点击我" onclick="openwin()"/>
+        </form>
+    </body>
+</html>

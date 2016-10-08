@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!--
+    函数定义好后，是不能自动执行的，需要调用它,
+    直接在需要的位置写函数名。
+
+    第一种情况:在<script>标签内调用。
+    第二种情况:在HTML文件中调用。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>函数调用</title>
+        <script type="text/javascript">
+            function tcon()
+            {
+                alert("恭喜你学会函数调用了!");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button"  value="点点我" onclick="tcon()" />
+        </form>
+    </body>
+</html>

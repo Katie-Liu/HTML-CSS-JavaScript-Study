@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<!--
+    substring() 方法用于提取字符串中介于两个指定下标之间的字符。
+
+    语法:
+
+    stringObject.substring(starPos,stopPos)
+
+    注意：
+
+    1. 返回的内容是从 start开始(包含start位置的字符)到
+       stop-1 处的所有字符，其长度为 stop 减start。
+
+    2. 如果参数 start 与 stop 相等，那么该方法返回的就是
+       一个空串（即长度为 0 的字符串）。
+
+    3. 如果 start 比 stop 大，那么该方法在提取子串之前会
+       先交换这两个参数。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>string对象</title>
+        <script type="text/javascript">
+            var mystr="Hello World!"
+            document.write(mystr.substring(6, 12)+ "<br />");
+            document.write(mystr.substring(0, 5));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

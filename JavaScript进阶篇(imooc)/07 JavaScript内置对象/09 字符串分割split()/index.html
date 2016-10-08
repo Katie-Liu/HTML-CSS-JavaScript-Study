@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!--
+    split() 方法将字符串分割为字符串数组，并返回此数组。
+
+    语法：
+
+    stringObject.split(separator,limit)
+
+    注意：如果把空字符串 ("") 用作 separator，
+    那么 stringObject 中的每个字符之间都会被分割。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>无标题文档</title>
+        <script type="text/javascript">
+            var mystr="86-010-85468578";
+            document.write(mystr.split('-')+ "<br />");
+            document.write(mystr.split('')+ "<br />");
+            document.write(mystr.split('', 3));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

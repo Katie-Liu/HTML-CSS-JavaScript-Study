@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+    slice() 方法可从已有的数组中返回选定的元素。
+
+    语法
+
+    arrayObject.slice(start,end)
+
+    1.返回一个新的数组，包含从 start 到 end
+     （不包括该元素）的 arrayObject 中的元素。
+
+    2. 该方法并不会修改数组，而是返回一个子数组。
+
+    注意：
+
+    1. 可使用负值从数组的尾部选取元素。
+
+    2.如果 end 未被规定，那么 slice() 方法会选取从 start 到数组结尾的所有元素。
+
+    3. String.slice() 与 Array.slice() 相似。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Array对象 </title>
+        <script type="text/javascript">
+            var myarr1= ["我","爱","你"];
+            document.write(myarr1.slice(1));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE  HTML>
+<!--
+    格式要求：
+
+    1、显示打印的日期。 格式为类似“XXXX年XX月XX日 星期X” 的当前的时间。
+
+    2、计算出该班级的平均分（保留整数）。
+-->
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>系好安全带,准备启航</title>
+
+        <script type="text/javascript">
+
+            //通过javascript的日期对象来得到当前的日期，并输出。
+            var date = new Date();
+            document.write(date);
+            //成绩是一长窜的字符串不好处理，找规律后分割放到数组里更好操作哦
+            var scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
+            var tempArr = scoreStr.split(';');
+            var arr = [];
+            var sum = 0;
+            for (var i in tempArr) {
+                arr[i] = tempArr[i].substr(3,2);
+            }
+            //从数组中将成绩撮出来，然后求和取整，并输出。
+            for (var i in arr) {
+                sum += parseInt(arr[i]);
+            }
+            var agr = sum / arr.length;
+            var weeky = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+            document.write(date.getFullYear()+'年'+(date.getMonth()+1)+"月"+date.getDate()+'日'+' '+weeky[date.getDay()]+'--班级总分为:'+agr)
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

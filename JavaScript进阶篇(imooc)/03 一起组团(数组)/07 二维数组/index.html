@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<!--
+    二维数组的定义方法一：
+    先声明一维，再声明二维。
+
+    二维数组的定义方法二：
+    var Myarr = [[0 , 1 , 2 ],[1 , 2 , 3]];
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>二维数组</title>
+        <script type="text/javascript">
+            var myarr = new Array();
+            for (var i = 0; i <= 2; ++i){
+                myarr[i] = new Array();
+                for (var j = 0; j <= 5; ++j) {
+                    myarr[i][j] = i*j;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+    </body>
+</html>

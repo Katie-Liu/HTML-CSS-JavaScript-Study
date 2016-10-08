@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<!--
+    选中事件，当文本框或者文本域中的文字被选中时，
+    触发onselect事件，同时调用的程序就会被执行。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> 内容选中事件 </title>
+        <script type="text/javascript">
+            function message(){
+                alert("您触发了选中事件！"); }
+        </script>
+    </head>
+    <body>
+        <form>
+            个人简介：<br>
+            <textarea name="summary" cols="60" rows="5" onselect="message()">请写入个人简介，不少于200字！</textarea>
+        </form>
+    </body>
+</html>
