@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!--使用下拉列表框进行多选-->
+<!--
+    在<select>标签中设置
+    multiple="multiple"属性，
+    就可以实现多选功能
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>使用下拉列表框进行多选</title>
+    </head>
+    <body>
+        <form action="save.php" method="post" >
+            <label>爱好:</label>
+            <!--在<select>标签中设置multiple="multiple"属性，就可以实现多选功能-->
+            <select multiple = "multiple">
+                <option value="看书">看书</option>
+                <option value="旅游">旅游</option>
+                <option value="运动">运动</option>
+                <option value="购物">购物</option>
+            </select>
+        </form>
+    </body>
+</html>

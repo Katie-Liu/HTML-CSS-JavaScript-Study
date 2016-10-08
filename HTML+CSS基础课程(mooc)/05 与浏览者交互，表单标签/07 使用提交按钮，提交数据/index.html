@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<!--使用提交按钮，提交数据-->
+<!--
+    语法：
+
+    <input   type="submit"   value="提交">
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>提交按钮</title>
+    </head>
+    <body>
+        <form  method="post" action="save.php">
+            <label name="myName">姓名：</label>
+            <input type="text" value=" " name="myName " />
+            <!--type值设置为submit时，按钮起提交作用-->
+            <!--value：按钮上显示的文字-->
+            <input type="submit" value="提交" name="submitBtn" />
+        </form>
+    </body>
+</html>

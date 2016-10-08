@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!--使用下拉列表框，节省空间-->
+<!--
+    <option value="向服务器提交的值">显示的值</option>
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>下拉列表框</title>
+    </head>
+    <body>
+        <form action="save.php" method="post" >
+            <label>爱好:</label>
+            <select>
+                <option value="看书">看书</option>
+                <!--value为向服务器提交的值-->
+                <!--标签中间的值为显示值-->
+                <!--selected设置默认选中-->
+                <option value="旅游" selected = "selected">旅游</option>
+                <option value="运动">运动</option>
+                <option value="购物">购物</option>
+            </select>
+        </form>
+    </body>
+</html>
