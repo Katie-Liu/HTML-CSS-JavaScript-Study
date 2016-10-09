@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<!--
+    访问选定元素节点下的所有子节点的列表，
+    返回的值可以看作是一个数组，他具有length属性。
+
+    语法：
+
+    elementNode.childNodes
+    注意：
+
+    如果选定的节点没有子节点，则该属性返回
+    不包含节点的 NodeList。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>无标题文档</title>
+    </head>
+    <body>
+        <div>
+            javascript
+            <p>javascript</p>
+            <div>jQuery</div>
+            <h5>PHP</h5>
+        </div>
+        <script type="text/javascript">
+            // getElementsByXXX返回的是一个数组
+            var divArray = document.getElementsByTagName('div')[0].childNodes;
+            for (var i in divArray) {
+                document.write(divArray[i].nodeName + ' ' + divArray[i].nodeType + ' ' + divArray[i].nodeValue + '<br />')
+            }
+        </script>
+    </body>
+</html>

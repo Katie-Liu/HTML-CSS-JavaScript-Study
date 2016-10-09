@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+    制作一个跳转提示页面：
+
+    要求：
+
+    1. 如果打开该页面后，如果不做任何操作则5秒
+       后自动跳转到一个新的地址，如慕课网主页。
+
+    2. 如果点击“返回”按钮则返回前一个页面。
+-->
+<html>
+    <head>
+        <title>浏览器对象</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=gkb"/>
+    </head>
+    <body>
+        <!--先编写好网页布局-->
+        <input type="text" id="txt" />
+        <input type="button" value="返回" onclick="toBack()">
+
+
+        <script type="text/javascript">
+
+            //获取显示秒数的元素，通过定时器来更改秒数。
+            var txt = document.getElementById('txt');
+            var i;
+            var count = 0;
+            function looop() {
+                txt.value = count++;
+                if (count == 6)
+                {
+                    clearInterval(i);
+                    window.open('http://www.imooc.com/', '_self');
+                }
+            }
+            i = setInterval(looop, 1000);
+            //通过window的location和history对象来控制网页的跳转。
+            function toBack() {
+
+            }
+        </script>
+    </body>
+</html>

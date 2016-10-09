@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!--
+    insertBefore() 方法可在已有的子节点前插入一个新的子节点。
+
+    语法:
+
+    insertBefore(newnode,node);
+
+    参数:
+
+    newnode: 要插入的新节点。
+
+    node: 指定此节点前插入节点。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>无标题文档</title>
+    </head>
+    <body>
+
+        <ul id="test">
+            <li>JavaScript</li>
+            <li>HTML</li>
+        </ul>
+
+        <script type="text/javascript">
+            var otest = document.getElementById("test");
+            var newnode = document.createElement('li');
+            newnode.innerHTML = 'PHP';
+            otest.insertBefore(newnode, otest.childNodes[1]);
+        </script>
+
+    </body>
+</html>

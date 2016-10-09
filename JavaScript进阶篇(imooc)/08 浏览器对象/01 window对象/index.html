@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<!--
+    window对象是BOM的核心，
+    window对象指当前的浏览器窗口。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>window对象</title>
+        <script type="text/javascript">
+            alert('欢迎来到慕课网');
+            function openNewWindow() {
+                window.open('http://www.imooc.com/', '_blank', 'width=600,height=400');
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" value="点击我，打开新窗口"  onclick="openNewWindow()"/>
+        </form>
+    </body>
+</html>

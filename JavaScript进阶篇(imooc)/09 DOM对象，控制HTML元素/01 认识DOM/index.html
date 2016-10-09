@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!--
+    文档对象模型DOM（Document Object Model）
+    定义访问和处理HTML文档的标准方法。DOM 将HTML
+    文档呈现为带有元素、属性和文本的树结构（节点树）。
+
+    HTML文档可以说由节点构成的集合，DOM节点有:
+
+    1. 元素节点：<html>、<body>、<p>等
+       都是元素节点，即标签。
+
+    2. 文本节点:向用户展示的内容，如<li>...</li>
+       中的文本。
+
+    3. 属性节点:元素属性，如<a>标签的链接属性
+       href。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>style样式</title>
+    </head>
+    <body>
+        <h2 id="con">I love JavaScript</H2>
+        <p> JavaScript使网页显示动态效果并实现与用户交互功能。</p>
+        <script type="text/javascript">
+            var h2 = document.getElementById('con');
+            h2.style.color = 'red';
+            h2.style.backgroundColor = '#CCC';
+            h2.style.display = 'none';
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<!--
+    在执行时,从载入页面后每隔指定的时间执行代码。
+
+    语法:
+
+    setInterval(代码,交互时间);
+
+    参数说明：
+
+    1. 代码：要调用的函数或要执行的代码串。
+
+    2. 交互时间：周期性执行或调用表达式之间的时间间隔，以毫秒计（1s=1000ms）。
+
+    返回值:
+
+    一个可以传递给 clearInterval() 从而取消对"代码"的周期性执行的值。
+
+    调用函数格式(假设有一个clock()函数):
+
+    setInterval("clock()",1000)
+    或
+    setInterval(clock,1000)
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>定时器</title>
+        <script type="text/javascript">
+            var attime;
+            function clockx(){
+                var time=new Date();
+                attime= time.getHours().toString()+':'+time.getMinutes().toString()+':'+time.getSeconds().toString();
+                console.log(attime);
+                document.getElementById("clock").value = attime;
+            }
+            setInterval(clockx, 1000);
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="clock" size="50"/>
+        </form>
+    </body>
+</html>

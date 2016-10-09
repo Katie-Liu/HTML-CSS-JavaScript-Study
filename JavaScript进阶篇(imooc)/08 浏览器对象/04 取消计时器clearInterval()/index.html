@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<!--
+    clearInterval() 方法可取消由 setInterval() 设置的交互时间。
+
+    语法：
+    clearInterval(id_of_setInterval)
+
+    参数说明:
+    id_of_setInterval：由 setInterval() 返回的 ID 值。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>计时器</title>
+        <script type="text/javascript">
+            function clockx(){
+                var time=new Date();
+                document.getElementById("clock").value = time;
+            }
+            var i = setInterval(clockx, 1000);
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="clock" size="50"  />
+            <input type="button" value="Stop"  onclick="clearInterval(i)"/>
+        </form>
+    </body>
+</html>

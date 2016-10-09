@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<!--
+    go()方法，根据当前所处的页面，加载
+     history 列表中的某个具体的页面。
+
+    语法：
+
+    window.history.go(number);
+
+    number为+前进,number为-后退
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>无标题文档</title>
+    </head>
+    <script type="text/javascript">
+        function GoBack() {
+            window.history.go(-1);
+        }
+
+        function GoForward() {
+            window.history.go(1);
+        }
+    </script>
+    </head>
+    <body>
+        点击下面的锚点链接，添加历史列表项:
+        <br />
+        <a href="#target1">第一个锚点</a>
+        <a name="target1"></a>
+        <br />
+        <a href="#target2">第二个锚点</a>
+        <a name="target2"></a>
+        <br /><br />
+        使用下面按钮，实现返回前或下一个页面:
+        <form>
+            <input type="button"  value="返回前一个页面" onclick="GoBack();" />
+            <input type="button"  value="返回下一个页面" onclick="GoForward();" />
+        </form>
+    </body>
+</html>

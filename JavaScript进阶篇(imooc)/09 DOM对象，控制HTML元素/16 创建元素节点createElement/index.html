@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<!--
+    createElement()方法可创建元素节点。此方法可返回一个
+    Element 对象。
+
+    语法：
+
+    document.createElement(tagName)
+    参数:
+
+    tagName：字符串值，这个字符串用来指明创建元素的类型。
+
+    注意：要与appendChild() 或 insertBefore()方法联合使用，
+    将元素显示在页面中。
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>无标题文档</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var main = document.body;
+            //创建链接
+            function createa(url,text)
+            {
+                var alink = document.createElement('a');
+                alink.href = url;
+                alink.innerHTML = text;
+                alink.style.color = 'red';
+                main.appendChild(alink);
+            }
+            // 调用函数创建链接
+            createa('http://www.imooc.com', '慕课网');
+        </script>
+    </body>
+</html>
